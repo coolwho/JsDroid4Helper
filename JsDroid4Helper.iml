@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JSDROID_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="JsDroidSDK" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="JSD">
+        <CLASSES>
+          <root url="file://$USER_HOME$/jsdroid/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/jsdroid/lib" recursive="false" />
+      </library>
+    </orderEntry>
+  </component>
+</module>

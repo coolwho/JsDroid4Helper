@@ -1,0 +1,8 @@
+print rand.randMax(10)
+print rand.randHexString(10)
+print rand.randHexString(10,true)
+print rand.randAZ(10)
+print rand.randAZ(10,true)
+print rand.randBetween(1,2)
+print rand.randBool()
+print rand.randUUID()
