@@ -95,4 +95,15 @@ def testSQLite() {
     conn.close()
 }
 
-testSQLite()
+def testFtp(){
+    ftp.upload("47.105.173.131",21,"jsd_test_ftp",
+            "JYWx5C2Kw8D5M8X7",
+            "hello.txt",new ByteArrayInputStream("hello".getBytes()))
+
+    def download =new ByteArrayOutputStream()
+    ftp.download("47.105.173.131",21,"jsd_test_ftp",
+            "JYWx5C2Kw8D5M8X7","hello.txt",download)
+    println download.toString()
+
+}
+testFtp()

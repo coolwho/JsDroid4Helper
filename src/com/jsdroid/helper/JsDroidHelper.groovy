@@ -11,4 +11,5 @@ abstract class JsDroidHelper extends JsDroidScript {
     SQLite sqlite = new SQLite()
     Node node = new Node(this)
     Time time = new Time(this)
+    Ftp ftp = new Ftp()
 }
