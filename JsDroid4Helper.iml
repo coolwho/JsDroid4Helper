@@ -17,5 +17,6 @@
         <jarDirectory url="file://$USER_HOME$/jsdroid/lib" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
