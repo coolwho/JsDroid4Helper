@@ -59,7 +59,7 @@ def testMySQL() {
     conn.close()
 }
 
-//mysql测试
+//sqlite测试：只支持arm架构的系统，雷电模拟器支持arm
 def testSQLite() {
     def file = "/sdcard/hello.db"
     def conn = sqlite.connect(file)
