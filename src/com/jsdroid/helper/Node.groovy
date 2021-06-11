@@ -7,6 +7,9 @@ import com.jsdroid.sdk.nodes.Nodes
 import com.jsdroid.uiautomator2.UiObject
 import com.jsdroid.uiautomator2.UiObject2
 
+/**
+ * node功能库
+ */
 class Node {
     private JsDroidScript script;
 

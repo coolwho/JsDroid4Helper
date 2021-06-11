@@ -1,12 +1,15 @@
 package com.jsdroid.helper
 
-import groovy.transform.stc.ClosureParams
-import groovy.transform.stc.FromString
+
 import org.java_websocket.client.WebSocketClient
 import org.java_websocket.handshake.ServerHandshake
 
 import java.nio.ByteBuffer
 
+/**
+ * websocket 功能库
+ * jar: Java-WebSocket-1.5.2.jar
+ */
 class WebSocketHelper {
     WebSocket create(String url) {
         new WebSocket(url)
