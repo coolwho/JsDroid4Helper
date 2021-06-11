@@ -1,10 +1,3 @@
-import org.sqlite.JDBC
-import org.sqlite.SQLiteJDBCLoader
-import org.sqlite.core.NativeDB
-
-import java.sql.DriverManager
-import java.sql.Statement
-
 //随机数测试
 def testRand() {
     print rand.randMax(10)
@@ -95,15 +88,30 @@ def testSQLite() {
     conn.close()
 }
 
-def testFtp(){
-    ftp.upload("47.105.173.131",21,"jsd_test_ftp",
+def testFtp() {
+    ftp.upload("47.105.173.131", 21, "jsd_test_ftp",
             "JYWx5C2Kw8D5M8X7",
-            "hello.txt",new ByteArrayInputStream("hello".getBytes()))
+            "hello.txt", new ByteArrayInputStream("hello".getBytes()))
 
-    def download =new ByteArrayOutputStream()
-    ftp.download("47.105.173.131",21,"jsd_test_ftp",
-            "JYWx5C2Kw8D5M8X7","hello.txt",download)
+    def download = new ByteArrayOutputStream()
+    ftp.download("47.105.173.131", 21, "jsd_test_ftp",
+            "JYWx5C2Kw8D5M8X7", "hello.txt", download)
     println download.toString()
 
 }
-testFtp()
+
+def testWebSocket() {
+    def conn = webSocket.create("ws://jsdroid.com").onOpen({ conn, handshake ->
+
+    }).onMessage({ conn, msg ->
+
+    }).onBytesMessage({ conn, msg ->
+
+    }).onError({ conn, exception ->
+
+    }).onClose({ conn, code, reason, remote ->
+
+    }).connect()
+    conn.ping()
+    conn.send("hello websocket!")
+}

@@ -12,4 +12,5 @@ abstract class JsDroidHelper extends JsDroidScript {
     Node node = new Node(this)
     Time time = new Time(this)
     Ftp ftp = new Ftp()
+    WebSocketHelper webSocket = new WebSocketHelper()
 }
